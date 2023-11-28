@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/form.js" defer></script>
+    <title>CS601 HW4</title>
+</head>
+<body class="app">
+<div class="app-container">
+    <h1>CS601 HW4- Form Submission</h1>
+    <form class="form" id="form"
+          action="https://cs601.bu-course-examples.com/hw4/380a98f5-5191-496f-8aa1-7acc1da83cc5"
+          method="post">
+        <div class="form-item">
+            <label for="firstName">First Name</label>
+            <input id="firstName" name="firstName" type="text" required>
+            <div class="error" id="firstNameError"></div>
+        </div>
+        <div class="form-item">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" name="lastName" type="text" required>
+            <div class="error" id="lastNameError"></div>
+
+        </div>
+        <div class="form-item">
+            <label for="facilitator">Facilitator</label>
+            <input name="facilitator" id="facilitator" type="text" required>
+            <div class="error" id="facilitatorError"></div>
+
+        </div>
+        <div class="form-item">
+            <p>Current degree</p>
+            <div class="radio-group-container" id="radio">
+                <input type="radio" name="radioGroup" id="sd" value="software development">
+                <label for="sd">Software Development</label>
+                <input type="radio" name="radioGroup" id="cs" value="computer science">
+                <label for="cs">Computer Science</label>
+                <input type="radio" name="radioGroup" id="health" value="health informatics">
+                <label for="health">Health Informatics</label>
+            </div>
+            <div class="error" id="radioError"></div>
+        </div>
+        <div class="form-item">
+            <p>Known programming languages.</p>
+            <div class="check-box-container" id="checkBox">
+                <input type="checkbox" name="checkBox" id="c#" value="c#">
+                <label for="c#">C#</label>
+                <input type="checkbox" name="checkBox" id="c" value="c">
+                <label for="c">C</label>
+                <input type="checkbox" name="checkBox" id="java" value="java">
+                <label for="java">Java</label>
+                <input type="checkbox" name="checkBox" id="go" value="go">
+                <label for="go">Go</label>
+            </div>
+            <div class="error" id="checkBoxError"></div>
+        </div>
+        <div class="error" id="formErrors"></div>
+        <div class="btn-group form-item">
+            <button type="reset">Reset</button>
+            <button id="submitBtn" name="submitBtn" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

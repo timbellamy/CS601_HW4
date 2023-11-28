@@ -1,0 +1,39 @@
+.app{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.app-container{
+    margin: 5em;
+    height: 100%;
+}
+
+.form-item{
+   margin-bottom: 1em;
+}
+
+input{
+    border: 2px solid;
+    border-radius: 4px;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+input:valid{
+    border-color: green;
+}
+
+.error{
+    color: red;
+    font-weight: bold;
+}
+
+.btn-group{
+    float: right;
+}
